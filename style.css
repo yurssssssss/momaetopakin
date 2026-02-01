@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: pink;
+    overflow: hidden; /* Prevents scrollbars when 'No' button moves */
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    max-width: 500px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #eee;
+    transition: transform 0.2s ease; /* Smooth growth */
+}
+
+#yesBtn {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+/* GIF Fix: Prevent hover/click overlays */
+.tenor-gif-embed {
+    pointer-events: none !important;
+    user-select: none;
+    margin-top: 20px;
+}
+
+/* Utilities */
+.title, .silly, .flowers {
+    display: none;
+}
